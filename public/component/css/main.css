@@ -1,0 +1,74 @@
+.thumbnail {
+    position: relative;
+    box-shadow: inset 0 0 15px rgba(0,0,0,.1), inset 0 0 0 1px rgba(0,0,0,.05);
+    background: #f0f0f1;
+    cursor: pointer;
+    padding: 20px;
+    height: 197px;
+    overflow: hidden;
+}
+.thumbnail.active {
+    border: 1px solid blue;
+}
+.btn-choice__thumb-func {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.percent {
+    position: relative;
+    top: 2px;
+    width: 100%;
+    height: 2px;
+    background: #151515;
+    border-radius: 20px;
+    margin: 0 10px;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+.percent .progress {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #22ffde, #2196f3);
+    animation: animate 6s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 100%;
+        left: 100%;
+    }
+}
+.media-check {
+    position: absolute;
+    z-index: 9;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+    color: blue;
+    border-color: blue;
+    background-color: blue;
+    display: none;
+}
+.media-check.in
+{
+    display: block;
+}
+.btn-choice__thumb-func img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

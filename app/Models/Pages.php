@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Pages extends Model
+{
+    use HasFactory;
+
+    protected $table = 'pages';
+
+    protected $fillable = [
+        'title',
+        'slug',
+        'content',
+        'thumb',
+        'is_active'
+    ];
+    public function getView()
+    {
+        return 'pages.default';
+    }
+}

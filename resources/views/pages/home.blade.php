@@ -1,0 +1,9 @@
+@extends('main')
+@section('content')
+    @include("block.slider")
+    @include("block.product")
+    @include("block.product_category")
+    @include("block.company")
+    @include("block.market")
+    @include("block.more")
+@endsection
